@@ -70,10 +70,10 @@ A dataset of movies, `movies`, is available in the workspace.
 ```{python}
 # Get integer values for genres
 import pandas as pd
-requests = pd.read_csv('http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv')
+requests = pd.read_csv('http://s3.amazonaws.com/assets.datacamp.com/production/course_1983/datasets/311_Service_Requests.csv')
 requests['Incident Zip'].unique()
 na_value = ['NO CLUE', 'N/A', '0', ‘00000’]
-requests = pd.read_csv('http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv', na_values=na_value)
+requests = pd.read_csv('http://s3.amazonaws.com/assets.datacamp.com/production/course_1983/datasets/311_Service_Requests.csv', na_values=na_value)
 requests['Incident Zip'].unique()
 requests['Incident Zip'].astype(str)
 ```
