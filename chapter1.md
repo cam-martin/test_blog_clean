@@ -4,7 +4,7 @@ description : Insert the chapter description here
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
---- type:MultipleChoiceExercise lang:python xp:50 skills:1 key:78aef65e98
+--- type:MultipleChoiceExercise lang:python xp:50 skills:1 key:a2b3acee9e
 ## A really bad movie
 
 Have a look at the plot that showed up in the viewer to the right. Which type of movies have the worst rating assigned to them?
@@ -26,7 +26,7 @@ Have a look at the plot. Do you see a trend in the dots?
 import pandas as pd
 import matplotlib.pyplot as plt
 
-movies = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
+movies = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/course_1983/datasets/311_Service_Request.csv")
 
 plt.scatter(movies.runtime, movies.rating)
 plt.show()
@@ -41,7 +41,7 @@ msg_success = "Exactly! The correlation is very weak though."
 test_mc(4, [msg_bad, msg_bad, msg_bad, msg_success])
 ```
 
---- type:NormalExercise lang:python xp:100 skills:1 key:c42c2de6f0
+--- type:NormalExercise lang:python xp:100 skills:1 key:4ccb40bb74
 ## Plot the movies yourself
 
 Do you remember the plot of the last exercise? Let's make an even cooler plot!
